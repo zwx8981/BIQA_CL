@@ -189,9 +189,9 @@ def main(cfg):
 
         return test_results_srcc, val_results_srcc, all_hat_test, all_hat_val
 
-method = 'SH-CL-Replay'
+method = 'LwF'
 training = False
-head_usage = 3 #0:last 1:oracle 2:kmeans 3:single
+head_usage = 2 #0:last 1:oracle 2:weighted 3:single
 
 if __name__ == "__main__":
     if training:
