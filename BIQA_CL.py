@@ -190,7 +190,7 @@ def main(cfg):
         return test_results_srcc, val_results_srcc, all_hat_test, all_hat_val
 
 method = 'LwF'
-training = False
+training = True
 head_usage = 2 #0:last 1:oracle 2:weighted 3:single
 
 if __name__ == "__main__":
