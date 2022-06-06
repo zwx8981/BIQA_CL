@@ -3,7 +3,9 @@ The codebase of  [Continual Learning for Blind Image Quality Assessment](https:/
 
 ![BIQA_CL_framework](https://user-images.githubusercontent.com/14050646/170612919-af5704c8-c1ec-45c2-89fd-6d71420ca786.png)
 
-# Code and data coming soon!
+# Usage
+
+python BIQA_CL.py
 
 ## Citation
 
