@@ -12,7 +12,50 @@ scipy
 
 
 # Usage
+# Replay-free training: 
+
+(1) Using LwF for contiual learning of a model BIQA on six tasks:
+
+Modify Line 192 - Line 193 in BIQA_CL.py to :
+
+method = 'LwF'
+
+training = True
+
+head_usage = 2
+
+Then simply run:
+
 python BIQA_CL.py
+
+# Replay-based training: 
+
+(1) Using iCaRL-v2 for contiual learning of a model BIQA on six tasks:
+
+Modify Line 192 - Line 193 in BIQA_CL.py to :
+
+method = 'LwF-Replay'
+
+training = True
+
+Then simply run:
+
+python BIQA_CL.py
+
+# Inference:
+
+(1) Using the weighted quality predictions for inference:
+
+Modify Line 193 - Line 194 in BIQA_CL.py to :
+
+training = False
+
+head_usage = 2
+
+Then simply run:
+
+python BIQA_CL.py
+
 
 ## Citation
 
