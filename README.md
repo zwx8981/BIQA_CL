@@ -25,6 +25,36 @@ training = True
 ```
 Then run in terminal: python BIQA_CL.py
 ```
+
+(2) Using other contiual learning methods:
+
+Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+```
+method = 'EWC' /  'SI' / 'MAS'   
+training = True  
+```
+Set appropriate regularization weight by modifying Line84 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py):
+
+```
+1000 for si, 10 for mas, 10000 for ewc
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
+(3) Baselines:
+
+Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+```
+method = 'SL'  / 'SH-CL' / 'MH-CL'
+training = True  
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
 # Replay-based training: 
 
 (1) Using iCaRL-v2 for contiual learning of a model BIQA on six tasks:
