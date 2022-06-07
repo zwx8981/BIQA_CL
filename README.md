@@ -91,9 +91,22 @@ training = True
 Then run in terminal: python BIQA_CL.py
 ```
 
+# Joint Learning:
+
+Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+
+```
+method = 'JL'
+training = True
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
 # Inference:
 
-(1) Using the weighted quality predictions for inference:
+(1) Using the weighted quality predictions for inference, can be used with models trained by LwF / Reg-CL / MH-CL / MH-CL-Replay / iCaRL-v1 / iCaRL-v2:
 
 Modify Line 193 - Line 194 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 
@@ -105,6 +118,46 @@ head_usage = 2
 ```
 Then run in terminal: python BIQA_CL.py
 ```
+
+(2) Using task-oracle information for inference, can be used with models trained by  LwF / Reg-CL / MH-CL / MH-CL-Replay / iCaRL-v1 / iCaRL-v2:
+
+Modify Line 193 - Line 194 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+
+```
+training = False
+head_usage = 1
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
+(3) Using the prediction head trained in the latest task for inference, can be used with models trained by  LwF / Reg-CL / MH-CL / MH-CL-Replay / iCaRL-v1 / iCaRL-v2:
+
+Modify Line 193 - Line 194 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+
+```
+training = False
+head_usage = 0
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
+(4) Using the single head for inference, can be used with models trained by  SL / SH-CL / SH-CL-Replay / JL:
+
+Modify Line 193 - Line 194 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+
+```
+training = False
+head_usage = 3
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
 
 ## Citation
 
