@@ -15,9 +15,9 @@ scipy
 # Replay-free training: 
 
 (1) Using LwF for contiual learning of a model BIQA on six tasks:
-```
-Modify Line 192 - Line 193 in [BIQA_CL.py](https://arxiv.org/abs/2102.09717) to :
 
+Modify Line 192 - Line 193 in [BIQA_CL.py](https://arxiv.org/abs/2102.09717) to :
+```
 method = 'LwF'
 
 training = True
