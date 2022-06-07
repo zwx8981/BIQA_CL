@@ -219,6 +219,8 @@ if __name__ == "__main__":
             LwF_Replay()
             train_kmeans_after_training()
             train_experts_after_training()
+        elif method == 'JL':
+            JL()
     else:
         if head_usage == 0:
             eval_last_head()
