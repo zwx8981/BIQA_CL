@@ -205,6 +205,10 @@ if __name__ == "__main__":
             LwF()
             train_kmeans_after_training()
             train_experts_after_training()
+        elif method == 'Reg_CL':
+            Reg_CL()
+            train_kmeans_after_training()
+            train_experts_after_training()
         elif method == 'SH-CL-Replay':
             SH_CL_replay()
         elif method == 'MH-CL-Replay':
