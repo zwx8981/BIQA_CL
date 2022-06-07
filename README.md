@@ -16,17 +16,15 @@ scipy
 
 (1) Using LwF for contiual learning of a model BIQA on six tasks:
 
-Modify Line 192 - Line 193 in [BIQA_CL.py](https://arxiv.org/abs/2102.09717) to :
+Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 ```
-method = 'LwF'
+method = 'LwF'  
+training = True  
+head_usage = 2  
+```
 
-training = True
-
-head_usage = 2
-
-Then simply run:
-
-python BIQA_CL.py
+```
+Then run in terminal: python BIQA_CL.py
 ```
 # Replay-based training: 
 
