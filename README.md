@@ -33,7 +33,7 @@ Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/bl
 method = 'EWC' /  'SI' / 'MAS'   
 training = True  
 ```
-Set appropriate regularization weight by modifying Line84 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py):
+Set appropriate regularization weight by modifying Line 84 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py):
 
 ```
 1000 for si, 10 for mas, 10000 for ewc
@@ -57,13 +57,21 @@ Then run in terminal: python BIQA_CL.py
 
 # Replay-based training: 
 
-(1) Using iCaRL-v2 for contiual learning of a model BIQA on six tasks:
+(1) Using iCaRL for contiual learning of a model BIQA on six tasks:
 
 Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 
 ```
 method = 'LwF-Replay'
 training = True
+```
+
+Set Line 98 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py)
+
+```
+new_replay = False %for iCaRL-v1  
+or  
+new_replay = True %for iCaRL-v2
 ```
 
 ```
