@@ -16,7 +16,7 @@ scipy
 
 (1) Using LwF for contiual learning of a model BIQA on six tasks:
 ```
-Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+Modify Line 192 - Line 193 in [BIQA_CL.py] (https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 
 method = 'LwF'
 
