@@ -78,6 +78,19 @@ new_replay = True %for iCaRL-v2
 Then run in terminal: python BIQA_CL.py
 ```
 
+(2) Using other replay methods:
+
+Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
+
+```
+method = 'SH-CL-Replay' / 'MH-CL-Replay'
+training = True
+```
+
+```
+Then run in terminal: python BIQA_CL.py
+```
+
 # Inference:
 
 (1) Using the weighted quality predictions for inference:
