@@ -163,10 +163,14 @@ Then run in terminal: python BIQA_CL.py
 
 Should you find this repo useful to your research, we sincerely appreciate it if you cite our paper :blush: :
 ```bash
-@article{zhang2022continual,
+@article{zhang2023continual,
   title={Continual Learning for Blind Image Quality Assessment},
   author={Zhang, Weixia and Li, Dingquan and Ma, Chao and Zhai, Guangtao and Yang, Xiaokang and Ma, Kede},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={to appear, 2022}
+  month={Mar.},
+  volume={45},
+  issue={3},
+  pages={2864 - 2878},
+  year={2023}
 }
 ```
