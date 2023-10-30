@@ -7,14 +7,14 @@ The codebase of  [Continual Learning for Blind Image Quality Assessment](https:/
 torch 1.8+
 torchvision
 Python 3
-sckit-learn
+scikit-learn
 scipy
 
 
 # Usage
 # Replay-free training: 
 
-(1) Using LwF for contiual learning of a model BIQA on six tasks:
+(1) Using LwF for continual learning of a model BIQA on six tasks:
 
 Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 ```
@@ -26,7 +26,7 @@ training = True
 Then run in terminal: python BIQA_CL.py
 ```
 
-(2) Using other contiual learning methods:
+(2) Using other continual learning methods:
 
 Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 ```
@@ -57,7 +57,7 @@ Then run in terminal: python BIQA_CL.py
 
 # Replay-based training: 
 
-(1) Using iCaRL for contiual learning of a model BIQA on six tasks:
+(1) Using iCaRL for continual learning of a model BIQA on six tasks:
 
 Modify Line 192 - Line 193 in [BIQA_CL.py](https://github.com/zwx8981/BIQA_CL/blob/main/BIQA_CL.py) to :
 
